@@ -82,7 +82,7 @@ This project aims to implement  microservices  which is used to manage books and
 
 - Request
  ```
-  curl -X POST -d '{"name":"aryan","email":"arnav@example.com","password":"rohan123","phoneno":8123456789}' \
+  curl -X POST -d '{"name":"aryan","email":"arnav@example.com","password":"rohan123","phoneno":234565778}' \
   http://localhost:80/api/v1/users/register \
   --header 'Content-Type: application/json'
  ```
