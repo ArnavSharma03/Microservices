@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  userinteractionservice:
+    image: userinteractionservice
+    build:
+      context: user_interaction_service
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
