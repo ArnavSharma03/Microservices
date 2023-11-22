@@ -1,5 +1,5 @@
 
-# Book-microservice
+# Book-Microservice
 
 This project aims to implement  microservices  which is used to manage books and provide books as content
 
