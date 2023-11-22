@@ -1,58 +1,34 @@
+
 # Book-microservice
 
-This project aims to implement 4 microservices pertaining to serving books as content.
+This project aims to implement  microservices  which is used to manage books and provide books as content
 
 
-# Instructions
+# Runing Instructions
  Run the docker compose yaml file to start.
 
 `docker-compose -f docker-compose.yaml up`
 
-# System Design
+
 
 ## Features
  - Built a scalable backend system to serve books as contents.
+ - 
  - Dockerized entire application including all services and databases for easy deployement.
+ - 
  - Used Nginx as a reverse proxy to cater requests to different services.
+ - 
  - Used RabbitMQ as the Message-Broker to publish message from User Service to Email Service after which an email 
    will be sent to the newly regsitered user.
+   
  - User can filter books based on the basis of likes or reads interactions.
  - Implemented database using Mongodb for all three services.
 
 
-## System Architecture
-
-![new_system_design_template drawio](https://user-images.githubusercontent.com/37933427/153756157-34581434-bb5a-470e-ad82-9b0f2511425c.png)
-
-This diagram illustrates how this project's backend works.
 
 
-![screenshot](https://user-images.githubusercontent.com/37933427/151713856-fc274162-817f-42f8-b6ec-1eb00b973caf.png)
-
-<details>
-    <summary>Diagram Code</summary>
     
-    Title: Backend Architecture
-    participant client
-    participant Nginx Server as proxy
-    participant Contents server as webserver
-    participant controller
-    participant service
-    participant domain
-    participant database
 
-    client -> proxy:  POST /api/v1/Contents
-    proxy -> webserver:  POST /api/v1/Contents
-    webserver -> controller: post_content_handler()
-    controller -> service: content_service(user_id)
-    service -> domain: content_domain(user_id)
-    domain -> database: domain_model
-    domain -> service: document
-    service -> controller: data
-    controller -> webserver: JSON or HTML Response
-    webserver -> proxy: HTTP Response
-    proxy -> client: HTTP Response
-</details>
 
 
 ## Database Schema
@@ -81,6 +57,9 @@ This diagram illustrates how this project's backend works.
 | liked_by:list_of_strings |
 | read_by:list_of_strings  |
 
+## System Architecture
+
+![new_system_design_template drawio](https://user-images.githubusercontent.com/37933427/153756157-34581434-bb5a-470e-ad82-9b0f2511425c.png)
 
 ## User Service
 
@@ -103,7 +82,7 @@ This diagram illustrates how this project's backend works.
 
 - Request
  ```
-  curl -X POST -d '{"name":"chirag","email":"chirag@example.com","password":"abc1","phoneno":8123456789}' \
+  curl -X POST -d '{"name":"aryan","email":"arnav@example.com","password":"rohan123","phoneno":8123456789}' \
   http://localhost:80/api/v1/users/register \
   --header 'Content-Type: application/json'
  ```
@@ -112,9 +91,9 @@ This diagram illustrates how this project's backend works.
  ```json
   {
    "result": {
-       "name": "Chirag",
-        "email": "chirag@example.com",
-        "password": "abc1",
+       "name": "aryan",
+        "email": "arnav@example.com",
+        "password": "rohan123",
         "phoneno": 8123456789,
         "_id": "61f77e267aceb6f9e51c25b3",
       }        
