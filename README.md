@@ -129,21 +129,21 @@ This project aims to implement  microservices  which is used to manage books and
     [
       {
          "_id": "61f82deddaa122263e6f0c22",
-         "title": "Interstellar",
+         "title": "Arnav",
          "story": "No Time for caution",
          "user_id": "61f82b9d2dfca828d5238e2c",
          "createdAt": "2022-01-31T18:43:57.980Z",
       },
       {
          "_id": "61f82ba9daa122263e6f0c1d",
-         "title": "HEllo world",
+         "title": "HEllo Aryan",
          "story": "Random story",
          "user_id": "61f82b9d2dfca828d5238e2c",
          "createdAt": "2022-01-31T18:34:17.596Z"
       },
       {
          "_id": "61f82ba8daa122263e6f0c1b",
-         "title": "Toy story",
+         "title": "Story",
          "story": "To infity and beyond",
          "user_id": "61f82b9d2dfca828d5238e2c",
          "createdAt": "2022-01-31T18:34:16.177Z"
