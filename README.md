@@ -136,7 +136,7 @@ This project aims to implement  microservices  which is used to manage books and
       },
       {
          "_id": "61f82ba9daa122263e6f0c1d",
-         "title": "HEllo Aryan",
+         "title": "Hello Aryan",
          "story": "Random story",
          "user_id": "61f82b9d2dfca828d5238e2c",
          "createdAt": "2022-01-31T18:34:17.596Z"
