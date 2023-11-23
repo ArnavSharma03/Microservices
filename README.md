@@ -66,19 +66,6 @@ This project aims to implement  microservices  which is used to manage books and
 - User service deals with user registration and login.
 - Jwt tokens is used to authorize the incoming user's request in all the services.
 
-### Rest Apis
-
-     register new user          POST     http:://api/v1/users/register
-
-     Login current user         GET      http:://api/v1/users/login
-
-     update phoneno             PATCH    http:://api/v1/users/updatephone
-
-     update password            PATCH    http:://api/v1/users/updatepassword
-
-     update name                PATCH    http:://api/v1/users/updatename
-     
-     delete user                DELETE   http:://api/v1/users
 
 - Request
  ```
