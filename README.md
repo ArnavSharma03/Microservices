@@ -63,8 +63,8 @@ This project aims to implement  microservices  which is used to manage books and
 
 ## User Service
 
-- User service deals with user registration and login.
-- Jwt tokens is used to authorize the incoming user's request in all the services.
+1 User service deals with user registration and login.
+2 Jwt tokens is used to authorize the incoming user's request in all the services.
 
 
 - Request
@@ -88,16 +88,16 @@ This project aims to implement  microservices  which is used to manage books and
  ```
 
  ## Email Service
- - Email service sends greeting mail to the newly registered users.
- - It consumes events from Message queue published by User service after new registration.
- - Email is sent using node mailer.
+ 1 Email service sends greeting mail to the newly registered users.
+ 2 It consumes events from Message queue published by User service after new registration.
+ 3 Email is sent using node mailer.
  
 
  
 ## Content Service
-- Serving books as content. A content will have a story and title as contents.
-- Content service should have atleast the title, story, date published and the user id stored.
-- A user will be able to create, update and delete contents.
+1 Serving books as content. A content will have a story and title as contents.
+2 Content service should have atleast the title, story, date published and the user id stored.
+3 A user will be able to create, update and delete contents.
 
 ### Rest Apis
 
@@ -152,11 +152,11 @@ This project aims to implement  microservices  which is used to manage books and
   }
   ```
  ## User interaction service
- - User Interaction service is basically to record events done by the user. In this case the service records 2 types of
+ 1 User Interaction service is basically to record events done by the user. In this case the service records 2 types of
    events - Like and Read.
- - Like - The content liked by the current user.
- - Read - The content i.e book completely read by the user.
- - This service exposes API for content service inorder to fetch top contents based on likes and reads count since these 2 events data is 
+ 2 Like - The content liked by the current user.
+ 3 Read - The content i.e book completely read by the user.
+ 4 This service exposes API for content service inorder to fetch top contents based on likes and reads count since these 2 events data is 
    stored in User_events database.
      
 ### Rest Apis
