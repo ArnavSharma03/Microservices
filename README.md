@@ -13,11 +13,11 @@ This project aims to implement  microservices  which is used to manage books and
 
 ## Features
  - Built a scalable backend system to serve books as contents.
- - 
+  
  - Dockerized entire application including all services and databases for easy deployement.
- - 
+   
  - Used Nginx as a reverse proxy to cater requests to different services.
- - 
+   
  - Used RabbitMQ as the Message-Broker to publish message from User Service to Email Service after which an email 
    will be sent to the newly regsitered user.
    
